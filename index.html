@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Заявка на Админку</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #2a2a2a;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      resize: none;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <form action="send.php" method="POST">
+    <h2>Заявка на Админку</h2>
+    <input type="text" name="uid" placeholder="1) Укажите ваш UID в игре." required>
+    <input type="number" name="age" placeholder="2) Укажите возраст / с 13 лет." required>
+    <textarea name="panel" placeholder="3) Опыт с работой админ-панелью." rows="2" required></textarea>
+    <textarea name="conflict" placeholder="4) Умение решить различные поставленные конфликты." rows="2" required></textarea>
+    <textarea name="why" placeholder="5) Для чего вы хотите вступить в роль администрации сервера?" rows="3" required></textarea>
+    <button type="submit">Подать заявку</button>
+  </form>
+</body>
+</html>
